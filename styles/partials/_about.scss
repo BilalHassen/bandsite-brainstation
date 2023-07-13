@@ -1,0 +1,72 @@
+.about__heading {
+  font-size: 2.4rem;
+  padding: 1rem 0rem 1rem 1.6rem;
+  font-weight: 600;
+  line-height: 32px;
+
+  @include tablet {
+    padding: 4rem 0rem 0rem 5rem;
+    font-size: 3.6rem;
+  }
+
+  @include desktop {
+    padding: 5rem 0rem 0rem 13rem;
+    font-size: 3.6rem;
+  }
+}
+
+.about {
+  padding: 0rem 1.6rem;
+
+  @include tablet {
+    margin: 3rem 10rem;
+    padding: 0;
+  }
+
+  @include desktop {
+    padding: 2rem 11rem;
+  }
+
+  &__text {
+    padding-top: 1rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 18px;
+
+    @include tablet {
+      font-size: 2.1rem;
+      padding-top: 2rem;
+      font-weight: 600;
+      line-height: 32px;
+    }
+
+    @include desktop {
+      font-size: 2.1rem;
+      padding-top: 3rem;
+      font-weight: 600;
+      line-height: 32px;
+      max-width: 73%;
+    }
+  }
+
+  &__text-1 {
+    padding-top: 0.5rem;
+    font-size: 1.3rem;
+
+    @include tablet {
+      font-size: 1.8rem;
+      font-weight: 600;
+      padding-top: 1rem;
+    }
+  }
+
+  &__modifier::before {
+    content: "\a";
+    white-space: pre;
+
+    @include tablet {
+      content: "";
+    }
+  }
+}
+

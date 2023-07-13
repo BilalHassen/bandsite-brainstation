@@ -1,1 +1,264 @@
-/*# sourceMappingURL=bio.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url(/assets/fonts/AvenirNextLTPro.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url(/assets/fonts/AvenirNextLTProDemi.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url(/assets/fonts/AvenirNextLTProBold.ttf) format("truetype");
+  font-weight: 700;
+}
+.header {
+  min-height: 5rem;
+  background-color: #323232;
+}
+
+.hero {
+  background: url("/assets/images/hero-bio.jpg") rgba(50, 50, 50, 0.5);
+  background-blend-mode: hue;
+  background-size: cover;
+  background-position: center;
+}
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  height: 18rem;
+}
+@media (min-width: 768px) {
+  .hero__wrapper {
+    align-items: center;
+    padding-top: 5rem;
+    max-width: 360%;
+    height: 46rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__wrapper {
+    align-items: center;
+    max-width: 130rem;
+    height: 70rem;
+  }
+}
+.hero__header {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 2.4rem;
+  padding-left: 2rem;
+}
+@media (min-width: 768px) {
+  .hero__header {
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 6.8rem;
+    padding-left: 4rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__header {
+    margin-left: 6rem;
+  }
+}
+
+.about__heading {
+  font-size: 2.4rem;
+  padding: 1rem 0rem 1rem 1.6rem;
+  font-weight: 600;
+  line-height: 32px;
+}
+@media (min-width: 768px) {
+  .about__heading {
+    padding: 4rem 0rem 0rem 5rem;
+    font-size: 3.6rem;
+  }
+}
+@media (min-width: 1280px) {
+  .about__heading {
+    padding: 5rem 0rem 0rem 13rem;
+    font-size: 3.6rem;
+  }
+}
+
+.about {
+  padding: 0rem 1.6rem;
+}
+@media (min-width: 768px) {
+  .about {
+    margin: 3rem 10rem;
+    padding: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .about {
+    padding: 2rem 11rem;
+  }
+}
+.about__text {
+  padding-top: 1rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 18px;
+}
+@media (min-width: 768px) {
+  .about__text {
+    font-size: 2.1rem;
+    padding-top: 2rem;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
+@media (min-width: 1280px) {
+  .about__text {
+    font-size: 2.1rem;
+    padding-top: 3rem;
+    font-weight: 600;
+    line-height: 32px;
+    max-width: 73%;
+  }
+}
+.about__text-1 {
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+}
+@media (min-width: 768px) {
+  .about__text-1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-top: 1rem;
+  }
+}
+.about__modifier::before {
+  content: "\a";
+  white-space: pre;
+}
+@media (min-width: 768px) {
+  .about__modifier::before {
+    content: "";
+  }
+}
+
+.information__heading {
+  padding: 1.5rem 0 1.5rem 1.6rem;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .information__heading {
+    padding: 1rem 0rem 0rem 11rem;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1280px) {
+  .information__heading {
+    padding: 0rem 0rem 0rem 21rem;
+    font-size: 2.4rem;
+  }
+}
+
+.information {
+  padding: 0rem 1.6rem;
+  height: 50%;
+}
+.information__para-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .information__para-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 9.8rem;
+    padding: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .information__para-wrapper {
+    padding: 1rem 10rem;
+    line-height: 22px;
+  }
+}
+.information__paragraph {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+
+.gallery {
+  background-color: #fafafa;
+  margin-top: 2rem;
+}
+.gallery__heading {
+  font-size: 2.4rem;
+  padding: 1rem 0rem 1rem 1.6rem;
+  font-weight: 600;
+  line-height: 32px;
+}
+@media (min-width: 768px) {
+  .gallery__heading {
+    padding: 4rem 0rem 0rem 3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .gallery__heading {
+    padding: 5rem 0rem 0rem 10rem;
+    font-size: 3.6rem;
+  }
+}
+.gallery__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0rem 1.6rem;
+}
+@media (min-width: 768px) {
+  .gallery__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem 3rem 3rem 3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .gallery__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 5rem 10rem 3rem 10rem;
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Avenir Next";
+}/*# sourceMappingURL=bio.css.map */

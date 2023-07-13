@@ -1,0 +1,19 @@
+@import './partials/reset';
+@import './partials/text';
+@import './partials/nav';
+@import './partials/mixins';
+@import './partials/variables';
+@import './partials/hero';
+@import './partials/about';
+@import './partials/information';
+@import './partials/gallery';
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Avenir Next";
+}
+
+
+
