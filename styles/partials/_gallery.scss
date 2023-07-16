@@ -1,41 +1,42 @@
 .gallery {
-    background-color: $color-4;
-    margin-top: 2rem;
+  background-color: $color-4;
+  margin-top: 2rem;
 
-    &__heading {
-        font-size: 2.4rem;
-        padding: 1rem 0rem 1rem 1.6rem;
-        font-weight: 600;
-        line-height: 32px;
+  &__heading {
+    font-size: 2.4rem;
+    padding: 1rem 0rem 1rem 1.6rem;
+    font-weight: 600;
+    line-height: 32px;
 
-        @include tablet {
-            padding: 4rem 0rem 0rem 3rem;
-        }
-
-        @include desktop {
-            padding: 5rem 0rem 0rem 10rem;
-            font-size: 3.6rem;
-        }
+    @include tablet {
+      padding: 4rem 0rem 0rem 3rem;
     }
 
-    &__container {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        padding: 0rem 1.6rem;
-
-        @include tablet {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr) ;
-            grid-template-rows: repeat(3, 1fr);
-            padding: 1rem 3rem 3rem 3rem;
-        }
-
-        @include desktop {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr) ;
-            grid-template-rows: repeat(3, 1fr);
-            padding: 5rem 10rem 3rem 10rem;
-        }
+    @include desktop {
+      padding: 5rem 0rem 0rem 10rem;
+      font-size: 3.6rem;
     }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 1.6rem;
+    padding-bottom: 2rem;
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      padding: 1rem 3rem 3rem 3rem;
+    }
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      padding: 5rem 10rem 3rem 10rem;
+    }
+  }
 }

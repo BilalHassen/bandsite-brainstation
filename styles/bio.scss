@@ -1,20 +1,17 @@
-@import './partials/reset';
-@import './partials/text';
-@import './partials/nav';
-@import './partials/mixins';
-@import './partials/variables';
-@import './partials/hero';
-@import './partials/about';
-@import './partials/information';
-@import './partials/gallery';
-@import './partials/footer';
+@import "./partials/reset";
+@import "./partials/text";
+@import "./partials/nav";
+@import "./partials/mixins";
+@import "./partials/variables";
+@import "./partials/hero";
+@import "./partials/about";
+@import "./partials/information";
+@import "./partials/gallery";
+@import "./partials/footer";
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: "Avenir Next";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Avenir Next";
 }
-
-
-

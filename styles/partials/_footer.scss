@@ -1,3 +1,115 @@
 .footer {
-    background-color: $color-1;
+  background-color: $color-1;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  position: relative;
+
+  @include tablet {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  @include desktop {
+    padding-left: 5.5rem;
+  }
+
+  &__heading {
+    color: $color-2;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-weight: 600;
+    padding: 2rem 0 2rem 1.6rem;
+
+    @include tablet {
+      font-size: 3.6rem;
+      padding-top: 6rem;
+    }
+  }
+
+  &__heading-container {
+    @include tablet {
+      display: flex;
+      padding-left: 3rem;
+    }
+  }
+
+  &__icon-container {
+    display: flex;
+    gap: 3.5rem;
+    object-fit: contain;
+    width: 50%;
+    padding-left: 1.6rem;
+
+    @include tablet {
+      align-items: center;
+      padding-left: 3rem;
+      padding-top: 4.6rem;
+    }
+  }
+
+  &__icon {
+    @include tablet {
+      object-fit: cover;
+      height: 2.7rem;
+    }
+  }
+
+  &__cards-wrapper {
+    @include tablet {
+      display: flex;
+      gap: 3rem;
+      padding-left: 3rem;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1.6rem;
+    color: $color-2;
+    padding-top: 2.3rem;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    padding: 6rem 0 1.5rem 1.6rem;
+
+    @include tablet {
+      position: absolute;
+      right: 4rem;
+      top: 1rem;
+    }
+
+    @include desktop {
+      position: absolute;
+      right: 10.2rem;
+    }
+  }
+
+  &__copyright {
+    padding: 0 0 2rem 1.6rem;
+    color: $color-2;
+
+    @include tablet {
+      padding: 5rem 0 4rem 4.7rem;
+    }
+  }
+}
+
+.footer__label {
+  @include tablet {
+    padding-bottom: 1.6rem;
+  }
+}
+
+.footer__location2 {
+  @include tablet {
+    padding-bottom: 1.6rem;
+  }
 }
