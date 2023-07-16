@@ -4,6 +4,12 @@
 .header {
   min-height: 5rem;
   background-color: $color-1;
+
+  @include tablet {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav {
@@ -11,7 +17,7 @@
 
   @include tablet {
     display: flex;
-    padding-left: 4rem;
+    padding-left: 3.6rem;
   }
 
   @include desktop {
@@ -24,7 +30,7 @@
     padding-top: 1.5rem;
 
     @include tablet {
-      padding-right: 4rem;
+      padding-right: 3.6rem;
     }
   }
 
@@ -51,7 +57,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0rem;
     font-size: 1.4rem;
   }
 }
@@ -60,6 +66,4 @@
   border-bottom: 3px solid $color-2;
 }
 
-.active:hover {
-  border-bottom: 3px solid $color-2;
-}
+
