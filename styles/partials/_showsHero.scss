@@ -1,0 +1,44 @@
+.hero {
+    background: url("/assets/images/hero-shows.jpg") rgba($color-1, 0.5);
+    background-blend-mode: hue;
+    background-size: cover;
+    background-position: center;
+  
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      height: 18rem;
+  
+      @include tablet {
+        align-items: center;
+        padding-top: 5rem;
+        max-width: 360%;
+        height: 46rem;
+      }
+  
+      @include desktop {
+        align-items: center;
+        max-width: 130rem;
+        height: 70rem;
+      }
+    }
+  
+    &__header {
+      color: $color-2;
+      font-weight: 700;
+      line-height: 32px;
+      font-size: 2.4rem;
+      padding-left: 2rem;
+  
+      @include tablet {
+        font-weight: 600;
+        font-size: 6rem;
+        line-height: 6.8rem;
+        padding-left: 3.6rem;
+      }
+  
+      @include desktop {
+        margin-left: 6rem;
+      }
+    }
+  }

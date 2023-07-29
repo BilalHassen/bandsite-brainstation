@@ -445,6 +445,53 @@ a {
   }
 }
 
+.hero {
+  background: url("/assets/images/hero-shows.jpg") rgba(50, 50, 50, 0.5);
+  background-blend-mode: hue;
+  background-size: cover;
+  background-position: center;
+}
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  height: 18rem;
+}
+@media (min-width: 768px) {
+  .hero__wrapper {
+    align-items: center;
+    padding-top: 5rem;
+    max-width: 360%;
+    height: 46rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__wrapper {
+    align-items: center;
+    max-width: 130rem;
+    height: 70rem;
+  }
+}
+.hero__header {
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 32px;
+  font-size: 2.4rem;
+  padding-left: 2rem;
+}
+@media (min-width: 768px) {
+  .hero__header {
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 6.8rem;
+    padding-left: 3.6rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__header {
+    margin-left: 6rem;
+  }
+}
+
 body {
   min-height: 100vh;
   display: flex;
