@@ -3,6 +3,8 @@
   font-size: 1.3rem;
   line-height: 1.8rem;
   position: relative;
+  border-top: 2px solid $color-4;
+  margin-bottom: 4rem;
 
   @include tablet {
     font-size: 1.4rem;

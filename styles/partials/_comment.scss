@@ -1,0 +1,148 @@
+// .comment {
+//     padding-left: 1.6rem;
+//     max-width: 100%;
+
+//     @include tablet {
+        
+//     }
+
+//     &__header {
+//         font-size: 2.2rem;
+//         font-weight: 600;
+//         padding-bottom: 1.6rem;
+
+//         @include tablet {
+//             padding-left: 1.8rem;
+//             padding-bottom: 3rem;
+//             font-size: 3.6rem
+//         }
+
+//         @include desktop {
+//             padding-left: 8rem;
+//         }
+//     }
+
+//     &__avatar {
+//         padding-right: 1rem;
+//         padding-top: 1.6rem;
+//     }
+
+//     &__picture {
+//         border-radius: 50%;
+//         vertical-align: middle;
+//         width: 50px;
+//         height: 50px;
+//     }
+//     &__name{
+//         width: 68.5vw;
+//         height: 40px;
+//         margin-top: .5rem;
+//         margin-bottom: 1rem;
+//         padding-bottom: .3rem;
+//         padding-left: .5rem;
+//         border-radius: 5px;
+//         border: 1px solid $color-5;
+//         background-color: $color-3;
+//     }
+//     &__name-text{
+//         color: $color-5;
+//         font-size: 1.3rem;
+//         margin-bottom: 1rem;
+//     }
+
+//     &__button-container{
+//         margin-bottom: 1.6rem;
+//         margin-top: 1.6rem;
+//         margin-left: 3rem;
+
+//         @include desktop {
+//             padding-bottom: 2rem;
+//         }
+//     }
+
+//     &__button {
+//         background-color: $color-1;
+//         font-size: 1.4rem;
+//         padding-top: 1rem;
+//         padding-bottom: 1rem;
+//         text-align: center;
+//         margin-left: 3.7rem;
+//         max-width: 81%;
+//         border-radius: 5px;
+//         border-color: solid $color-1;
+//         color: white;
+
+//         @include tablet {
+//             width: 25%;
+//             height: 45px;
+//             text-align: center;
+//             vertical-align: middle;
+//             line-height: 25px;
+//             margin-left: 44.6rem;
+//         }
+
+//         @include desktop {
+//             width: 14%;
+//             margin-left: 60rem;
+//         }
+//     }
+// }
+
+// .comment__container {
+//     display: flex;
+//     gap: 1rem;
+
+//     @include tablet {
+//         padding-left: 6rem;
+//     }
+
+//     @include desktop {
+//         width: 80%;
+//         justify-content: center;
+//         padding-left: 14rem;
+//     }
+// }
+
+
+
+// #comments__name{
+//     width: 68.5vw;
+//     height: 40px;
+//     margin-top: .5rem;
+//     margin-bottom: 1rem;
+//     padding-bottom: .3rem;
+//     padding-left: .5rem;
+//     border-radius: 5px;
+//     border: 1px solid $color-5;
+//     background-color: $color-3;
+
+//     @include desktop {
+//         width: 30vw;
+//     }
+// }
+
+// #comments__text {
+//     width: 68.5vw;
+//     margin-top: .5rem;
+//     margin-bottom: 1rem;
+//     height: 100px;
+//     padding-bottom: 7rem;
+//     padding-left: .5rem;
+//     border-radius: 5px;
+//     border: 1px solid $color-5;
+//     margin-top: 1rem;
+//     background: $color-3;
+    
+
+//     @include desktop {
+//         width: 30vw;
+//     }
+// }
+
+
+
+
+// input::placeholder{
+//     color: black;
+// }
+

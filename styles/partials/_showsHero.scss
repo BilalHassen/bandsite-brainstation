@@ -4,20 +4,34 @@
     background-size: cover;
     background-position: center;
   
-    &__wrapper {
-      display: flex;
-      align-items: center;
-      height: 18rem;
+    &__para {
+      font-size: 1.6rem;
+      color: $color-2;
+      font-weight: 400;
+      line-height: 32px;
+      padding: 2.4rem 1.6rem 1.6rem;
   
       @include tablet {
-        align-items: center;
+        font-size: 2.4rem;
+        padding-left: 3.6rem;
+      }
+    }
+  
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 22rem;
+  
+      @include tablet {
         padding-top: 5rem;
         max-width: 360%;
         height: 46rem;
       }
   
       @include desktop {
-        align-items: center;
+        display: flex;
+        flex-direction: row;
         max-width: 130rem;
         height: 70rem;
       }
@@ -27,8 +41,10 @@
       color: $color-2;
       font-weight: 700;
       line-height: 32px;
+      font-weight: 600;
       font-size: 2.4rem;
-      padding-left: 2rem;
+      padding-left: 1.6rem;
+      padding-bottom: 1.6rem;
   
       @include tablet {
         font-weight: 600;
@@ -40,5 +56,20 @@
       @include desktop {
         margin-left: 6rem;
       }
+    }
+  
+    &__song-container{
+      width: 100%;
+      padding-left: 1.6rem;
+      padding-right: 1.6rem;
+    }
+  
+  
+  
+    &__song {
+      border-radius: 10px;
+      background-color: white;
+      width: 100%;
+      height: 100px;
     }
   }

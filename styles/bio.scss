@@ -8,7 +8,9 @@
 @import "./partials/information";
 @import "./partials/gallery";
 @import "./partials/footer";
-@import "./partials/showsHero";
+@import './partials/comment';
+@import './partials/js-comment';
+
 body {
   min-height: 100vh;
   display: flex;
