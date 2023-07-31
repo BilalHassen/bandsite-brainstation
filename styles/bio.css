@@ -449,11 +449,33 @@ a {
 
 .comment__header {
   font-size: 2.4rem;
+  font-weight: 600;
+  padding: 1.6rem 0rem;
+}
+@media (min-width: 768px) {
+  .comment__header {
+    font-size: 3.6rem;
+    font-weight: 600;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    margin-left: 3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__header {
+    margin-left: 10rem;
+    font-size: 3.6rem;
+  }
 }
 
 .comment {
   height: 49rem;
   width: 95vw;
+}
+@media (min-width: 768px) {
+  .comment {
+    height: 40rem;
+  }
 }
 .comment__box {
   display: flex;
@@ -461,10 +483,26 @@ a {
   padding-bottom: 1.6rem;
   padding-left: 1.6rem;
   padding-top: 1.6rem;
+  margin-top: 1.6rem;
   border-top: 1px solid silver;
+}
+@media (min-width: 768px) {
+  .comment__box {
+    margin: 0rem 10rem;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__box {
+    margin: 0rem 32rem;
+  }
 }
 .comment__name {
   padding-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .comment__name {
+    padding: 0;
+  }
 }
 .comment__date {
   color: #afafaf;
@@ -475,14 +513,35 @@ a {
   font-weight: 600;
   font-size: 1.3rem;
 }
+@media (min-width: 768px) {
+  .comment__name-txt {
+    font-size: 1.3rem;
+    line-height: 3.2rem;
+  }
+}
 .comment__body-txt {
   font-size: 1.3rem;
   line-height: 18px;
+}
+@media (min-width: 768px) {
+  .comment__body-txt {
+    font-size: 1.4rem;
+  }
 }
 
 .comment__box:nth-child(3) {
   margin-left: 1.6rem;
   border-bottom: 1px solid #afafaf;
+}
+@media (min-width: 768px) {
+  .comment__box:nth-child(3) {
+    margin: 0 10rem;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__box:nth-child(3) {
+    margin: 0 32rem;
+  }
 }
 
 .comment__pic {
@@ -492,10 +551,157 @@ a {
   border-radius: 60px;
   padding-right: 5rem;
 }
+@media (min-width: 768px) {
+  .comment__pic {
+    margin-top: 0.4rem;
+  }
+}
 
 .comment__name {
   display: flex;
   justify-content: space-between;
+}
+
+.comment__form-container {
+  max-height: 70vw;
+}
+@media (min-width: 768px) {
+  .comment__form-container {
+    height: 35vw;
+    padding-left: 7rem;
+    margin-right: 14rem;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__form-container {
+    height: 75vh;
+    padding-left: 17rem;
+    margin-right: 20rem;
+  }
+}
+
+.comment__container {
+  display: flex;
+  gap: 2rem;
+}
+@media (min-width: 1280px) {
+  .comment__container {
+    justify-content: center;
+    padding-right: 6rem;
+  }
+}
+
+.comment__picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 60px;
+  margin-left: 1.6rem;
+}
+@media (min-width: 768px) {
+  .comment__picture {
+    margin-top: 2.2rem;
+  }
+}
+
+.comment__name-container {
+  padding-bottom: 1.6rem;
+}
+
+#comments__name {
+  width: 68vw;
+  height: 10vw;
+  padding-left: 0.5rem;
+  margin-top: 0.7rem;
+  background-color: #e1e1e1;
+  border: 1px solid #afafaf;
+  border-radius: 3px;
+}
+@media (min-width: 768px) {
+  #comments__name {
+    width: 60vw;
+    height: 7vw;
+  }
+}
+@media (min-width: 1280px) {
+  #comments__name {
+    width: 40vw;
+    height: 15vh;
+  }
+}
+
+#comments__text {
+  padding-bottom: 3rem;
+  padding-left: 0.5rem;
+  width: 68vw;
+  height: 20vw;
+  margin-top: 0.7rem;
+  background-color: #e1e1e1;
+  border: 1px solid #afafaf;
+  border-radius: 3px;
+  font-size: 1.3rem;
+}
+@media (min-width: 768px) {
+  #comments__text {
+    width: 60vw;
+    height: 10vw;
+  }
+}
+@media (min-width: 1280px) {
+  #comments__text {
+    width: 40vw;
+    height: 20vh;
+  }
+}
+
+.comment__button {
+  background-color: #323232;
+  margin-top: 1.6rem;
+  height: 4rem;
+  text-align: center;
+  padding-top: 1.2rem;
+  padding-bottom: 0rem;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.3rem;
+}
+@media (min-width: 768px) {
+  .comment__button {
+    width: 40%;
+    margin-left: 28rem;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__button {
+    margin-left: 30.8rem;
+  }
+}
+
+.comment__name-text {
+  font-size: 1.4rem;
+  color: #afafaf;
+}
+
+input::-moz-placeholder {
+  color: black;
+}
+
+input::placeholder {
+  color: black;
+}
+@media (min-width: 768px) {
+  input::-moz-placeholder {
+    font-size: 1.4rem;
+  }
+  input::placeholder {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .comment__button-container {
+    max-width: 100vw;
+  }
 }
 
 body {

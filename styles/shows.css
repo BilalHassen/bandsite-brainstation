@@ -33,11 +33,20 @@ a {
   font-weight: 400;
   line-height: 32px;
   padding: 2.4rem 1.6rem 1.6rem;
+  position: absolute;
 }
 @media (min-width: 768px) {
   .hero__para {
     font-size: 2.4rem;
     padding-left: 3.6rem;
+  }
+}
+@media (min-width: 1280px) {
+  .hero__para {
+    font-size: 3.6rem;
+    position: absolute;
+    top: 29rem;
+    left: 6rem;
   }
 }
 .hero__wrapper {
@@ -57,6 +66,8 @@ a {
   .hero__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     max-width: 130rem;
     height: 70rem;
   }
@@ -84,9 +95,15 @@ a {
   }
 }
 .hero__song-container {
-  width: 100%;
+  width: 40%;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
+}
+@media (min-width: 1280px) {
+  .hero__song-container {
+    margin-right: 7.5rem;
+    width: 40%;
+  }
 }
 .hero__song {
   border-radius: 10px;
@@ -121,7 +138,7 @@ a {
     position: absolute;
     left: 10rem;
     font-size: 4.6rem;
-    top: 86rem;
+    top: 80rem;
   }
 }
 .shows__card {

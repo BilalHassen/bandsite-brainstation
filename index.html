@@ -133,10 +133,36 @@
 
     
       <h1 class="comment__header">Join the Conversation</h1>
-    
-    <article class="comment">
 
-    </article>
+<section class="comment__form-container">
+   <form id="comment__form" class="comment__container">
+        <!--name-->
+        <div class="comment__avatar">
+          <img class="comment__picture"
+          src="./assets/images/Mohan-muruge.jpg"
+          alt="standard-avatar"
+          />
+        </div>
+
+        <div class="comment__flex-wrapper">
+        <div class="comment__name-container">
+        <label for="name" class="comment__name-text">NAME </label><br>
+        <input type="text"  name="name" id="comments__name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="comment__text-container">
+        <label for="comment" class="comment__name-text">COMMENT</label><br>
+        <input name="comments" id="comments__text" placeholder="Add a new Comment"></input>
+        </div>
+        <div class="comment__button-container">
+        <div class="comment__button">COMMENT</div>
+        </div>
+      </div>
+      </form>
+    </section>
+
+    
+    <article class="comment"></article>
     
 
 

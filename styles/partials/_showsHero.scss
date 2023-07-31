@@ -1,75 +1,89 @@
 .hero {
-    background: url("/assets/images/hero-shows.jpg") rgba($color-1, 0.5);
-    background-blend-mode: hue;
-    background-size: cover;
-    background-position: center;
-  
-    &__para {
-      font-size: 1.6rem;
-      color: $color-2;
-      font-weight: 400;
-      line-height: 32px;
-      padding: 2.4rem 1.6rem 1.6rem;
-  
-      @include tablet {
-        font-size: 2.4rem;
-        padding-left: 3.6rem;
-      }
-    }
-  
-    &__wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      height: 22rem;
-  
-      @include tablet {
-        padding-top: 5rem;
-        max-width: 360%;
-        height: 46rem;
-      }
-  
-      @include desktop {
-        display: flex;
-        flex-direction: row;
-        max-width: 130rem;
-        height: 70rem;
-      }
-    }
-  
-    &__header {
-      color: $color-2;
-      font-weight: 700;
-      line-height: 32px;
-      font-weight: 600;
+  background: url("/assets/images/hero-shows.jpg") rgba($color-1, 0.5);
+  background-blend-mode: hue;
+  background-size: cover;
+  background-position: center;
+
+  &__para {
+    font-size: 1.6rem;
+    color: $color-2;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 2.4rem 1.6rem 1.6rem;
+    position: absolute;
+
+    @include tablet {
       font-size: 2.4rem;
-      padding-left: 1.6rem;
-      padding-bottom: 1.6rem;
-  
-      @include tablet {
-        font-weight: 600;
-        font-size: 6rem;
-        line-height: 6.8rem;
-        padding-left: 3.6rem;
-      }
-  
-      @include desktop {
-        margin-left: 6rem;
-      }
+      padding-left: 3.6rem;
     }
-  
-    &__song-container{
-      width: 100%;
-      padding-left: 1.6rem;
-      padding-right: 1.6rem;
-    }
-  
-  
-  
-    &__song {
-      border-radius: 10px;
-      background-color: white;
-      width: 100%;
-      height: 100px;
+
+    @include desktop {
+      font-size: 3.6rem;
+      position: absolute;
+      top: 29rem;
+      left: 6rem;
     }
   }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 22rem;
+
+    @include tablet {
+      padding-top: 5rem;
+      max-width: 360%;
+      height: 46rem;
+    }
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 130rem;
+      height: 70rem;
+    }
+  }
+
+  &__header {
+    color: $color-2;
+    font-weight: 700;
+    line-height: 32px;
+    font-weight: 600;
+    font-size: 2.4rem;
+    padding-left: 1.6rem;
+    padding-bottom: 1.6rem;
+
+    @include tablet {
+      font-weight: 600;
+      font-size: 6rem;
+      line-height: 6.8rem;
+      padding-left: 3.6rem;
+    }
+
+    @include desktop {
+      margin-left: 6rem;
+    }
+  }
+
+  &__song-container {
+    width: 40%;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+
+    @include desktop {
+      margin-right: 7.5rem;
+      width: 40%;
+    }
+  }
+
+  &__song {
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+  }
+}
+
