@@ -33,19 +33,20 @@ a {
   font-weight: 400;
   line-height: 32px;
   padding: 2.4rem 1.6rem 1.6rem;
-  position: absolute;
 }
 @media (min-width: 768px) {
   .hero__para {
     font-size: 2.4rem;
-    padding-left: 3.6rem;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+    padding-top: 10rem;
   }
 }
 @media (min-width: 1280px) {
   .hero__para {
     font-size: 3.6rem;
     position: absolute;
-    top: 29rem;
+    top: 24rem;
     left: 6rem;
   }
 }
@@ -57,9 +58,9 @@ a {
 }
 @media (min-width: 768px) {
   .hero__wrapper {
-    padding-top: 5rem;
     max-width: 360%;
-    height: 46rem;
+    height: 40rem;
+    padding: 0rem;
   }
 }
 @media (min-width: 1280px) {
@@ -69,7 +70,7 @@ a {
     justify-content: space-between;
     align-items: center;
     max-width: 130rem;
-    height: 70rem;
+    height: 80rem;
   }
 }
 .hero__header {
@@ -86,7 +87,7 @@ a {
     font-weight: 600;
     font-size: 6rem;
     line-height: 6.8rem;
-    padding-left: 3.6rem;
+    padding-left: 5rem;
   }
 }
 @media (min-width: 1280px) {
@@ -95,21 +96,34 @@ a {
   }
 }
 .hero__song-container {
-  width: 40%;
+  width: 100%;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
 }
+@media (min-width: 768px) {
+  .hero__song-container {
+    width: 52%;
+    padding-left: 5rem;
+  }
+}
 @media (min-width: 1280px) {
   .hero__song-container {
-    margin-right: 7.5rem;
-    width: 40%;
+    margin-right: 11rem;
+    width: 37%;
   }
 }
 .hero__song {
-  border-radius: 10px;
+  border-radius: 3px;
   background-color: white;
   width: 100%;
   height: 100px;
+}
+@media (min-width: 768px) {
+  .hero__song {
+    margin-top: 2rem;
+    width: 110%;
+    height: 15rem;
+  }
 }
 
 .shows {
@@ -125,12 +139,12 @@ a {
   .shows {
     margin-left: 35rem;
     width: 70%;
-    padding-top: 6rem;
+    padding: 6rem 3rem;
   }
 }
 .shows__heading {
   font-size: 2.4rem;
-  padding: 3rem 1.6rem 1rem;
+  padding: 3rem 0.9rem 1rem;
   font-weight: 600;
 }
 @media (min-width: 1280px) {
@@ -138,7 +152,7 @@ a {
     position: absolute;
     left: 10rem;
     font-size: 4.6rem;
-    top: 80rem;
+    top: 89rem;
   }
 }
 .shows__card {
@@ -202,4 +216,13 @@ a {
     width: 25%;
     height: 40px;
   }
+}
+@media (min-width: 1280px) {
+  .shows__button {
+    width: 20%;
+  }
+}
+
+.shows__heading {
+  padding-right: 0rem;
 }/*# sourceMappingURL=shows.css.map */

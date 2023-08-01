@@ -7,19 +7,19 @@
   @include desktop {
     margin-left: 35rem;
     width: 70%;
-    padding-top: 6rem;
+    padding: 6rem 3rem;
   }
 
   &__heading {
     font-size: 2.4rem;
-    padding: 3rem 1.6rem 1rem;
+    padding: 3rem 0.9rem 1rem;
     font-weight: 600;
 
     @include desktop {
       position: absolute;
       left: 10rem;
       font-size: 4.6rem;
-      top: 80rem;
+      top: 89rem;
     }
   }
 
@@ -88,5 +88,13 @@
       width: 25%;
       height: 40px;
     }
+
+    @include desktop {
+      width: 20%;
+    }
   }
+}
+
+.shows__heading {
+  padding-right: 0rem;
 }

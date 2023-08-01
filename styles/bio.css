@@ -333,7 +333,6 @@ a {
   line-height: 1.8rem;
   position: relative;
   border-top: 2px solid #fafafa;
-  margin-bottom: 4rem;
 }
 @media (min-width: 768px) {
   .footer {
@@ -541,19 +540,15 @@ a {
   justify-content: space-between;
 }
 
-.comment__form-container {
-  max-height: 70vw;
-}
 @media (min-width: 768px) {
   .comment__form-container {
-    height: 35vw;
+    padding-bottom: 3rem;
     padding-left: 7rem;
     margin-right: 14rem;
   }
 }
 @media (min-width: 1280px) {
   .comment__form-container {
-    height: 75vh;
     padding-left: 17rem;
     margin-right: 20rem;
   }
