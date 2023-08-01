@@ -1,7 +1,7 @@
 .comment__header {
   font-size: 2.4rem;
   font-weight: 600;
-  padding: 1.6rem 0rem;
+  padding: 1.6rem 1.6rem 2rem;
 
   @include tablet {
     font-size: 3.6rem;
@@ -18,20 +18,15 @@
 }
 
 .comment {
-  height: 49rem;
   width: 95vw;
-
-  @include tablet {
-    height: 40rem;
-  }
 
   &__box {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     padding-bottom: 1.6rem;
-    padding-left: 1.6rem;
     padding-top: 1.6rem;
     margin-top: 1.6rem;
+    margin-left: 1.6rem;
     border-top: 1px solid silver;
 
     @include tablet {
@@ -77,18 +72,18 @@
   }
 }
 
-.comment__box:nth-child(3) {
-  margin-left: 1.6rem;
-  border-bottom: 1px solid $color-5;
+// .comment__box:nth-child(3) {
+//   margin-left: 1.6rem;
+//   border-bottom: 1px solid $color-5;
 
-  @include tablet {
-    margin: 0 10rem;
-  }
+//   @include tablet {
+//     margin: 0 10rem;
+//   }
 
-  @include desktop {
-    margin: 0 32rem;
-  }
-}
+//   @include desktop {
+//     margin: 0 32rem;
+//   }
+// }
 
 .comment__pic {
   width: 50px;
@@ -194,9 +189,11 @@
   background-color: $color-1;
   margin-top: 1.6rem;
   height: 4rem;
+  width: 100%;
   text-align: center;
+  padding: left 4rem;
   padding-top: 1.2rem;
-  padding-bottom: 0rem;
+  padding-bottom: 1.2rem;
   border-radius: 5px;
   color: white;
   font-size: 1.3rem;
@@ -222,11 +219,5 @@ input::placeholder {
 
   @include tablet {
     font-size: 1.4rem;
-  }
-}
-
-.comment__button-container {
-  @include tablet {
-    max-width: 100vw;
   }
 }

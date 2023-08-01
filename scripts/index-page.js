@@ -12,7 +12,7 @@ const commentArray = [
       "I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.",
   },
   {
-    name: "Connor Walton",
+    name: "Miles Acosta",
     date: "12/20/2020",
     comment:
       "I can't stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can't get enough.",
@@ -80,4 +80,24 @@ function displayComment() {
     commentCardContainer.appendChild(comment);
   }
 }
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+
+  console.log("handling submit");
+
+  var today = new Date();
+  const commentInfo = {
+    name: event.target.name.value,
+    comment: event.target.comment.value,
+    date: today.toLocaleDateString("en-US"),
+  };
+
+  commentArray.push(commentInfo);
+  displayComment();
+  console.log(commentArray);
+}
+
+const formElement = document.querySelector(".comment__container");
+formElement.addEventListener("submit", handleFormSubmit);
 displayComment();
