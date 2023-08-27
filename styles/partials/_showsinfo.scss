@@ -35,8 +35,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 4rem;
-      padding: 1rem 1rem 1rem 1rem;
+      gap: 2rem;
+      padding: 1rem 0rem;
+      width: 100%;
     }
   }
 
@@ -97,4 +98,15 @@
 
 .shows__heading {
   padding-right: 0rem;
+}
+// .shows__date {
+//   width: fit-content;
+// }
+
+.shows__card:hover {
+  background-color: $color-4;
+}
+
+.shows__card:active {
+  background-color: $color-6;
 }

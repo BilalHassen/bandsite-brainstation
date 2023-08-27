@@ -1,35 +1,6 @@
-const showsArray = [
-  {
-    date: "Mon Sept 06 2021",
-    venue: "Ronald Lane ",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Tue Sept 21 2021 ",
-    venue: "Pier 3 East ",
-    location: "San Francisco, CA ",
-  },
-  {
-    date: "Fri Oct 15 2021 ",
-    venue: "View Lounge",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Sat Nov 06 2021",
-    venue: "Hyatt Agency",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Fri Nov 26 2021",
-    venue: "Moscow Center",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Wed Dec 15 2021 ",
-    venue: "Press Club",
-    location: "San Francisco, CA",
-  },
-];
+let showsArray = [];
+
+const apiKey = "87bd8a87-b5be-429b-a80c-174900ddd7b9";
 
 function createShowsWrapper(showsData) {
   let showsContainer = document.querySelector(".shows");
@@ -52,7 +23,14 @@ function createShowsWrapper(showsData) {
   //second para for shows date
   let showsDateParaTwo = document.createElement("p");
   showsDateParaTwo.classList.add("shows__date-para2");
-  showsDateParaTwo.textContent = showsData.date;
+  const dateFormat = new Date(showsData.date);
+  const dateString =
+    dateFormat.getDate() +
+    "/" +
+    (dateFormat.getMonth() + 1) +
+    "/" +
+    dateFormat.getFullYear();
+  showsDateParaTwo.textContent = dateString;
   showsDate.appendChild(showsDateParaTwo);
 
   // div for venue
@@ -69,7 +47,7 @@ function createShowsWrapper(showsData) {
   //second para for shows venue
   let showsVenueParaTwo = document.createElement("p");
   showsVenueParaTwo.classList.add("shows__venue-para2");
-  showsVenueParaTwo.textContent = showsData.venue;
+  showsVenueParaTwo.textContent = showsData.place;
   showsVenue.appendChild(showsVenueParaTwo);
 
   // div for shows location
@@ -100,11 +78,15 @@ function createShowsWrapper(showsData) {
 
 function presentShows() {
   let showsContainer = document.querySelector(".shows");
-
-  showsArray.forEach((showsElement) => {
-    const showCard = createShowsWrapper(showsElement);
-    showsContainer.appendChild(showCard);
-  });
+  axios
+    .get("https://project-1-api.herokuapp.com/showdates?api_key=" + apiKey)
+    .then((response) => {
+      showsArray = response.data;
+      showsArray.forEach((showsElement) => {
+        const showCard = createShowsWrapper(showsElement);
+        showsContainer.appendChild(showCard);
+      });
+    });
 }
 
 presentShows();
