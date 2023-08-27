@@ -468,7 +468,7 @@ a {
 }
 
 .comment {
-  width: 95vw;
+  width: 90%;
 }
 .comment__box {
   display: flex;
@@ -495,11 +495,13 @@ a {
 @media (min-width: 768px) {
   .comment__name {
     padding: 0;
+    max-width: 100%;
   }
 }
 .comment__date {
   color: #afafaf;
   font-size: 1.3rem;
+  text-align: center;
 }
 .comment__name-txt {
   color: #323232;
@@ -515,10 +517,12 @@ a {
 .comment__body-txt {
   font-size: 1.3rem;
   line-height: 18px;
+  word-wrap: break-word;
 }
 @media (min-width: 768px) {
   .comment__body-txt {
     font-size: 1.4rem;
+    word-wrap: break-word;
   }
 }
 
@@ -674,6 +678,25 @@ input::placeholder {
   }
 }
 
+.comment__text-div {
+  width: 70%;
+}
+@media (min-width: 768px) {
+  .comment__text-div {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .comment__text-div {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .comment__date-p {
+    padding-top: 0.3rem;
+  }
+}
 body {
   min-height: 100vh;
   display: flex;

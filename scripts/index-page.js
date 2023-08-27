@@ -36,7 +36,7 @@ function createCommentContainer(comment) {
 
   //date para
   let datePara = document.createElement("p");
-  datePara.classList.add("comment__date");
+  datePara.classList.add("comment__date-p");
   const dateFormat = new Date(comment.timestamp);
   const dateString =
     dateFormat.getDate() +
