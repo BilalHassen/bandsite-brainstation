@@ -232,6 +232,6 @@ a {
   background-color: #fafafa;
 }
 
-.shows__card:active {
+.shows__card.active {
   background-color: #e1e1e1;
 }/*# sourceMappingURL=shows.css.map */

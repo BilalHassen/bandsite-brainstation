@@ -9,6 +9,10 @@ function createShowsWrapper(showsData) {
   showCard.classList.add("shows__card");
   showsContainer.appendChild(showCard);
 
+  showCard.addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
+
   //div for shows date
   let showsDate = document.createElement("div");
   showsDate.classList.add("shows__date");
