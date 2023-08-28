@@ -468,7 +468,17 @@ a {
 }
 
 .comment {
-  width: 90%;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .comment {
+    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  .comment {
+    width: 90%;
+  }
 }
 .comment__box {
   display: flex;
@@ -477,16 +487,19 @@ a {
   padding-top: 1.6rem;
   margin-top: 1.6rem;
   margin-left: 1.6rem;
+  margin-right: 1rem;
   border-top: 1px solid silver;
 }
 @media (min-width: 768px) {
   .comment__box {
     margin: 0rem 10rem;
+    width: 68%;
   }
 }
 @media (min-width: 1280px) {
   .comment__box {
     margin: 0rem 32rem;
+    width: 50%;
   }
 }
 .comment__name {
@@ -588,9 +601,9 @@ a {
 #comments__name {
   width: 68vw;
   height: 10vw;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   margin-top: 0.7rem;
-  background-color: #e1e1e1;
+  background-color: #fafafa;
   border: 1px solid #afafaf;
   border-radius: 3px;
 }
@@ -603,17 +616,17 @@ a {
 @media (min-width: 1280px) {
   #comments__name {
     width: 40vw;
-    height: 15vh;
+    height: 5rem;
   }
 }
 
 #comments__text {
-  padding-bottom: 3rem;
-  padding-left: 0.5rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
   width: 68vw;
   height: 20vw;
   margin-top: 0.7rem;
-  background-color: #e1e1e1;
+  background-color: #fafafa;
   border: 1px solid #afafaf;
   border-radius: 3px;
   font-size: 1.3rem;
@@ -621,13 +634,13 @@ a {
 @media (min-width: 768px) {
   #comments__text {
     width: 60vw;
-    height: 10vw;
+    height: 10rem;
   }
 }
 @media (min-width: 1280px) {
   #comments__text {
     width: 40vw;
-    height: 20vh;
+    height: 10rem;
   }
 }
 

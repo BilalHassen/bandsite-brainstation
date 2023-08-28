@@ -18,7 +18,15 @@
 }
 
 .comment {
-  width: 90%;
+  width: 100%;
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include desktop {
+    width: 90%;
+  }
 
   &__box {
     display: flex;
@@ -27,14 +35,17 @@
     padding-top: 1.6rem;
     margin-top: 1.6rem;
     margin-left: 1.6rem;
+    margin-right: 1rem;
     border-top: 1px solid silver;
 
     @include tablet {
       margin: 0rem 10rem;
+      width: 68%;
     }
 
     @include desktop {
       margin: 0rem 32rem;
+      width: 50%;
     }
   }
 
@@ -147,9 +158,9 @@
 #comments__name {
   width: 68vw;
   height: 10vw;
-  padding-left: 0.5rem;
+  padding-left: 1rem;
   margin-top: 0.7rem;
-  background-color: $color-6;
+  background-color: $color-4;
   border: 1px solid $color-5;
   border-radius: 3px;
 
@@ -160,29 +171,29 @@
 
   @include desktop {
     width: 40vw;
-    height: 15vh;
+    height: 5rem;
   }
 }
 
 #comments__text {
-  padding-bottom: 3rem;
-  padding-left: 0.5rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
   width: 68vw;
   height: 20vw;
   margin-top: 0.7rem;
-  background-color: $color-6;
+  background-color: $color-4;
   border: 1px solid $color-5;
   border-radius: 3px;
   font-size: 1.3rem;
 
   @include tablet {
     width: 60vw;
-    height: 10vw;
+    height: 10rem;
   }
 
   @include desktop {
     width: 40vw;
-    height: 20vh;
+    height: 10rem;
   }
 }
 
